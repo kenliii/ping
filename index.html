@@ -2,33 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  We are launching soon!
+  <div class="container">
+    <img src="./images/logo.svg" alt="logo" class="logo">
+    <h1 class="heading">We are launching soon!</h1>
+    <p class="sub-heading">Subscribe and get notified</p>
+    <form action="#">
+      <input type="email" placeholder="Email Address">
+      <button type="submit">Notify Me</button>
+    </form>
+    <img src="./images/illustration-dashboard.png" alt="hero-img" class="hero-img">
+    <div class="icons">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEJ0lEQVR4nO2ZW4hVVRzGf95GULN0VFAnrcYgTGUgfOlF0TRHMZ3JlHySvKD44Is6+pAk3kYQDDQiesrwjoaOUTBQiaSYaIqIir6Ygngb71fGmfjDt2GxOfu+55zzMB8sOJz9X9/a31lr/W8HOtGJskcfoBZoBJqAS0AL8ErDPl8EDgObgCmaUxboopffB7wA2hOO58AeiTKukmAWcM55qVbgb2A9UA+MBPoBPTTs84d6tgE4rjne/LNAXTEFjACanRe4BqwAhqTgGgqsBP5z+H4H3qODMRd4pAVvAQv0a2dFBbAIuCPuh8AcOgBddGS8X22Hjkre6A/sdNZZm7eI70T8EviKjscieTpbc1tepN5OPAE+pXioBZ7mtTNznZ3IQ0S1XK3xfgl8AUwGPgIGBojxdmZ2Fu/kXewsx8nu0hqfZwoaNQHHzJ49SOvNmp2LnRZjgRvOi94EftOF3qlA+qdzhGoCeDwHYHMTBzvPxab1Th8Aj8VzFPg4xPbfCCGVjmuekcRLeRHb4kQaGMdpcewCukfYRwkxLJbNmbjpTK0TsdMGu8kOR+8CzwcA44FPNK7GEFIBXJddLMezT8aWOqTFTyEcq0MSzJoI3lWy2x31Am8oI21NmTt5uKIFx/i+n6PvXynBbPaN6gjet4HXwDOgV5xjZYukRYUTe7r5np3Ss6UZ+E+Kw45vIBplZNE8LQY5Hs8v8LV2I0tBtUn8G8OMmmRkNUNaVIvDLrCLKn1vcSULZonnUJjRZRlZAZQlI2jXPfHHlXaVu1kwKg7PPRlZOl2uQgaIxwJkIF7KyM5zHMxUU8EdDyKEtBaY442xMdbsKR5z4YHwMs24gXB2SAIYJCRsVCb0ioFokdFbCYX8opzMHW/6bLsVsOmnJoVx3I65Zn/Z3w0zuiSjUQmF7CU9JojjWEz70bK/EGZ0REZ1RRSyRBw/xrSvl701+gKxIU6wKSDEsuUG37CCyEVlAZsG1SPGsTzmmptlvy7MaJqMTpTgsk9PmKKEZsC9Va21qXkWhTFKa9zxQ4SQuwXm2BgcY70qvduTqKTRsD9jvtWRAXF9kjs5ySn2/S60lEL6AvfFYZ4uElZGnk94AYshpEHzrSyOjc+cXRleBkKqnGBtNVOqdtAfQNcSCukK/OV06hPjHadBZ9taKiGrndNhpW4qzJS7a1MELraQ+aoq27K0TD2s1QsY4bwiClkoATbnG3LCt46Yxog0P6uQHqrLPRFbyBnLHPJTeuG8hbyrDk671sptJ/z43AlKz7RTg3MQYj20rU4zuyVjAyQWhjvdFk/QdmCciqckQqy0/d7XeWwChlFETAX+8WWw1rz4NULIbbVUr/nmGpdxlgy2Ez87MSdJGv9Y/79YQ7tsYE2BicDXwMECf8q8r2N1QP9gTUjQrelEJygR/gf1aciEOXd4dAAAAABJRU5ErkJggg==">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEUUlEQVR4nO2Za4hVVRTHfzmjNWo6TJNYqUmUlVpIRA97QJpoND3M7EFYQhEVkgSZBfaCLDMJe2kiZSEZpX0wCCv6oEVPe1Gaj2YQc/xQVlqZzozaxIL/GZaXc+6ce8++d65w/7C595y9zlp77b32WmuvDVVUUUUVZcAIYBowC3gMuBO4FKjhCEBv4B7gJ6Azof0GzAcaEnj0Am4E1gBNcQTjgTeAE0ukxBhgixvwLuBNDfpRYAnwtevfDdzkvj9eq+Z5PJcrpA+wTZ0/APWBlbgS2Cv+G4Br8pjQKcAy4JDoTdnP3bNvNjmHYUoOwcdA/0BKnAP8K75LZF5pcDmwx43JFFkL/KXnt+M+Wq7Ol4Ev9P8roDGjEse4lX6piO9HAnO1J04AFjvFXgE+04p1IbK7i4GBThl7PyqDIrPEx2y/NgOfRuDDBOfwsyf8Ry8H6dnMarXemVncXoTwo4Cd4mGOJAuW5wz+gPu1ye9Cmzr65bi5J4H/1GczcnoBws/Xdy1kx3hgKXA38KBTxJ4Pww51nJnAZLv62+XyhqUQfp++eZFwmAkc1OQ+FEfwnoRen8DA9s3zQIfoOrTc47RycXhGtPcHUuJZJ3t6EtG9Inq3G2anAW9pViJ7bQUWybMMdrSRh7krkCKt4ndtPqIGBawDKffBycDTwK8xXsQi9qfARj2b+wyBX8RvaHeEc52rtEifBjVK9GzZv3Wm55tt0hD4XfyOy0dkwWWlG8gK4OgihNXJW92szf4UcAZh0K6xJU5yv4RAsy7HHfckBmlMf3YXuDqcfXtlrqMycKHGs747wu9FOE2bfYr+Z0krQuIOZ/J5sUCEq6hMLNP4LCDmxVmKluZ+T6Xy0CJFzk1DvNLlVEnRuicw2u3fVKZ+ktvsC+UEKgGPuPNHalhw+9ttrNBH3kLRC2jWeK4o9OMx7hxhKcgclW56Ak0ax7ZiykRNThHfLPstN9ZKtp00C8bjMUqYR5tHeTFRsv8o1sRHuNKLKTVW55Fyohb4TmN4IEQAsoP9sZQfsyV/uxLRotHg8v8PyrwiI4H9kj0pBMOzlW1G1UELTKXGAGCTZL4aena2ivFBVfcsIx5SgoSyxpWgfgxY6exCX+AJFyij1panWFFM4HvdFa9Lmu8NdE4gqsVODcC31vHdC1xCiWBLPgH4yCnRrHQmK+pdKXQfcBmBMVSHq4U5UX6PihRmbllxHrDZpUJjszB7RzdELboXadXM5Eb2ZpUqQ7jhOu25qOxpcodnZbo+ZtBt8hqrlOOEqoLU6si6w+2xBVkDXoQ6zbS/UHkfmFzAhUyac87D7p7E2jfARZQAjSpORxG1UyZn9d1bFDcKmZwLlP5/klNetWB3QzkObfUq1X8ZY3K7dUO0Qjdb89ReAF5TIbwl5q6vTbdK43rq1DlKmecapdKdKVu79phdJ1xVigidFcPk529VOXS22gzgNuBq1cQqpRZWRRVkxP/7Rn+1IUqqAwAAAABJRU5ErkJggg==">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADK0lEQVR4nO2ZO09UQRTHfwUqRB67lksrgrEQBTsfsZOYqHwCQlS+gApS+2iNhFKDX0AxsZLFZ6f2Itio2AoKCBWuOcn/JhMDu3Mfu3NN9p9McrP3nHPn7Jz3QBNN5AK9wAQwDywAG0Alo2WyTGYZGAcO1UOBQeBFhpv2XfPAQBYK7AGmgT8S/AN4AFzQ6ewnO5gsk3kReKhvVfTtKaAlqeAi8FLCfgO3gE4ah07gNrDpnE4hyUlEpvRdphUKR4Ev2ssbYG8c5mkxfgNKhEcJWNae7vsyDcouzZyOkR8cl5lt67kmIpMyn8gb7mhvFqKroteJTo107Ajn5ZNmRkM7vO8CVrTHnmqCJkRk4S8Elp0cYv65E2b0/kY1QWURWSzPqyLDej9XTdCiiNKUB5Z/RoGnwCeVHht6ntU7o9kJQ1LGlDhXw/xN3q5YE1FHAgXagEngp0fpsQrcBFoTfKdDMmyvuyL6UJI4/8Hhfw5cccoYW336bc6he58wT1Vq7TOJIiWZQnTcJz14TjlmnCTpVrJWpM05iVcxayHzk9fifRfTzCpZKzIp+oUkBZ2UiU7GQn8QRYqOY/uY02444wSAYghFRh3HTosof42EUGRWtJdJj6uS9TiEIpFtW4hNiz6fJFcvRdZF2056tEvW+v+uSKdk/fKkb5pWNWe3siMtxkI6+6hPOe2J+ZDht6gkZvSnSY6zTkIshC5RFmNkZRfGs+TT8dVbkVaV4hUVgHGUOQC8zUvR+G8Zv6TaycecPuepjI9Q0r8a8ZcViQ4rz7Trecxx7Ogk6tJYraVodVtViq96trp2dbCvXq3uYgbDh4LC6BP1KetaC/ptJGHvEmv4EHoc5INhn/ZhPPCAzgePtMdreR6Z1oL3yBQnqtglS95wN05XOqBrhU3f8X2DMAhs6Vqh35dpSprb+LKb8Oh25sL34jC2OCZmY/4ThEM/8NVJtLEvRQuOMpu6ZDFnaxS65BNbTruQOP+06M5uW8JWdD9xSQODLNrcCCarT3lixolO2zKnxNfTLo4AzzxKj6xXuV4Bp0d9w5xTfmS1aZP1UaH1OnCwHgo00QTx8Bf0wax6bwlEYQAAAABJRU5ErkJggg==">
+    </div>
+  </div>
+  <p class="copyright">  &copy; Copyright Ping. All rights reserved.</p>
 
-  Subscribe and get notified
+  
 
-  Notify Me
+  
 
-  &copy; Copyright Ping. All rights reserved.
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
